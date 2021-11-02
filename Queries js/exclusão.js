@@ -1,0 +1,1 @@
+db.getCollection('funcionarios').remove({ "cpf" : '12345678902' });

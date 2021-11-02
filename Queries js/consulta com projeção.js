@@ -1,0 +1,1 @@
+db.getCollection('funcionarios').find({}, {"cpf": 1})
