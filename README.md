@@ -1,4 +1,4 @@
-## ✔  Banco de dados simples com Queries Mongo DB  
+## ✔  Banco de dados simples com queries MongoDB  
 &nbsp;    
 
 🍃  Criação do Banco de Dados e da Collection
