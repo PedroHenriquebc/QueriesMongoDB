@@ -4,7 +4,7 @@
 
 🍃  Criação do Banco de Dados e da Collection
 
-```json
+```js
 use funcionarioDB
 db.createCollection('funcionarios')
 ```
@@ -13,7 +13,7 @@ db.createCollection('funcionarios')
 
 🍃  Inserção de documentos
 
-```json
+```js
 // Insere 4 funcionários ao Document funcionarios
 db.funcionarios.insert([
 {
@@ -57,7 +57,7 @@ db.funcionarios.insert([
 
 🍃  Atualização de documentos
 
-```json
+```js
 //Adiciona idade ao funcionário com cpf '12345678901'
 db.getCollection('funcionarios').update(
     {
@@ -75,14 +75,14 @@ db.getCollection('funcionarios').update(
 
 🍃  Exclusão de documentos
 
-```json
+```js
 // Exclui o usuário de cpf '2345678902'
 db.getCollection('funcionarios').remove({ "cpf" : '12345678902' });
 ```
 
 🍃  Consulta com projeção
 
-```json
+```js
 // Consulta o funcionario com nome 'Pedro Henrique'
 db.getCollection('funcionarios').find({"nome": "Pedro Henrique"})
 
@@ -92,7 +92,7 @@ db.getCollection('funcionarios').find({}, {"cpf": 1})
 
 🍃  Consulta utilizando combinação entre os seletores
 
-```json
+```js
 // Consulta os funcionarios com idade maior que 20 E menor que 40
 db.getCollection('funcionarios').find(
     {$and:[
@@ -104,7 +104,7 @@ db.getCollection('funcionarios').find(
 
 🍃  Consulta paginada e ordenada
 
-```json
+```js
 // Consulta os funcionarios com idades menores ou igual a 40, mostrando só os nomes deles e em ordem alfabética além de limitar a resposta a 2 Documents.
 db.getCollection('funcionarios').find(
     {'idade': {$lte:40}},
