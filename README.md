@@ -1,6 +1,5 @@
-## ✔  Banco de dados simples com Queries Mongo DB   
-
-
+## ✔  Banco de dados simples com Queries Mongo DB  
+&nbsp;    
 
 🍃  Criação do Banco de Dados e da Collection
 
@@ -8,8 +7,7 @@
 use funcionarioDB
 db.createCollection('funcionarios')
 ```
-
-
+&nbsp;  
 
 🍃  Inserção de documentos
 
@@ -54,6 +52,7 @@ db.funcionarios.insert([
 }
 ])
 ```
+&nbsp;  
 
 🍃  Atualização de documentos
 
@@ -72,6 +71,7 @@ db.getCollection('funcionarios').update(
     }
 );
 ```
+&nbsp;  
 
 🍃  Exclusão de documentos
 
@@ -79,6 +79,7 @@ db.getCollection('funcionarios').update(
 // Exclui o usuário de cpf '2345678902'
 db.getCollection('funcionarios').remove({ "cpf" : '12345678902' });
 ```
+&nbsp;  
 
 🍃  Consulta com projeção
 
@@ -89,6 +90,7 @@ db.getCollection('funcionarios').find({"nome": "Pedro Henrique"})
 // Consulta todos os funcionairos mostrando apenas o atributo cpf:
 db.getCollection('funcionarios').find({}, {"cpf": 1})
 ```
+&nbsp;  
 
 🍃  Consulta utilizando combinação entre os seletores
 
@@ -101,6 +103,7 @@ db.getCollection('funcionarios').find(
     ]}
 )
 ```
+&nbsp;  
 
 🍃  Consulta paginada e ordenada
 
